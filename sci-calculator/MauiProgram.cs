@@ -11,8 +11,10 @@ namespace sci_calculator
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    //fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    //fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Cairo-Light.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Cairo-ExtraLight.ttf", "OpenSansSemibold");
                 });
 
 #if DEBUG
