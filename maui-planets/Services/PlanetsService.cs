@@ -132,6 +132,82 @@ namespace maui_planets.Services
                 "https://solarsystem.nasa.gov/system/feature_items/images/86_carousel_neptune_5.jpg",
                 "https://solarsystem.nasa.gov/system/feature_items/images/84_neptune_carousel_2.jpg"
             }
+        },
+
+        new()
+        {
+            Name = "Pluto",
+            Subtitle = "Was once a planet",
+            HeroImage = "plutohero.png",
+            Description = "Pluto was once our solar system's ninth planet, but has been reclassified as a dwarf planet. It's located in the Kuiper Belt.",
+            AccentColorStart = Color.FromArgb("#9d4a40"),
+            AccentColorEnd = Color.FromArgb("#996237"),
+            Images = new()
+            {
+                "plutobig.jpg",
+                "plutotruecolor.jpg",
+                "tenzigmontes.jpg"
+            }
+        },
+        new()
+        {
+            Name = "Ceres",
+            Subtitle = "Largest object in the asteroid belt",
+            HeroImage = "cereshero.png",
+            Description = "Dwarf planet Ceres is the largest object in the asteroid belt between Mars and Jupiter, and it's the only dwarf planet located in the inner solar system",
+            AccentColorStart = Color.FromArgb("#c0c0c0"),
+            AccentColorEnd = Color.FromArgb("#a0a0a0"),
+            Images = new()
+            {
+                "ceres.jpg",
+                "ceres2.jpg",
+                "ceres3.jpg",
+            }
+        },
+        new()
+        {
+            Name = "Haumea",
+            Subtitle = "Dwarf planet",
+            HeroImage = "haumeahero.png",
+            Description = "Haumea is an oval-shaped dwarf planet that is one of the fastest rotating large objects in our solar system. The fast spin distorts Haumea's shape, making this dwarf planet look like a football.",
+            AccentColorStart = Color.FromArgb("#606060"),
+            AccentColorEnd = Color.FromArgb("#606060"),
+            Images = new()
+            {
+                "haumea1.jpg",
+                "haumea2.png",
+                "haumea3.jpg"
+            }
+        },
+        new()
+        {
+            Name = "MakeMake",
+            Subtitle = "Dwarf Planet",
+            HeroImage = "makemakehero.png",
+            Description = "Dwarf planet Makemake – along with Pluto, Haumea, and Eris – is located in the Kuiper Belt, a donut-shaped region of icy bodies beyond the orbit of Neptune",
+            AccentColorStart = Color.FromArgb("#9d4a40").AddLuminosity(-0.25f),
+            AccentColorEnd = Color.FromArgb("#996237").AddLuminosity(-0.25f),
+            Images = new()
+            {
+                "makemake1.jpg",
+                "makemake2.png",
+                "makemake3.jpg"
+            }
+        },
+        new()
+        {
+            Name = "Eris",
+            Subtitle = "Dwarf Planet",
+            HeroImage = "erishero.png",
+            Description = "The discovery of Eris help trigger a debate in the scientific community that led to the International Astronomical Union's decision in 2006 to clarify the definition of a planet",
+            AccentColorStart = Color.FromArgb("#d4e9f7"),
+            AccentColorEnd = Color.FromArgb("eaf4fb"),
+            Images = new()
+            {
+                "eris1.jpg",
+                "eris2.jpg",
+                "eris3.jpg"
+            }
         }
     };
 

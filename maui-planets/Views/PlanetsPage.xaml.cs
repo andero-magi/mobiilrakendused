@@ -1,4 +1,5 @@
 using maui_planets.Models;
+using maui_planets.Services;
 using Microsoft.Maui.Controls;
 
 namespace maui_planets.Views;
@@ -12,7 +13,15 @@ public partial class PlanetsPage : ContentPage
 		InitializeComponent();
 	}
 
-	async void ProfilePic_Tapped(System.Object sender, System.EventArgs e)
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        lstPopularPlanets.ItemsSource = PlanetsService.GetFeaturedPlanets();
+        lstAllPlanets.ItemsSource = PlanetsService.GetAllPlanets();
+    }
+
+    async void ProfilePic_Clicked(System.Object sender, System.EventArgs e)
 	{
 		_ = MainContentGrid.TranslateTo(-this.Width * 0.5, this.Height * 0.1, AnimationDuration, Easing.CubicIn);
 		await MainContentGrid.ScaleTo(0.8, AnimationDuration);
