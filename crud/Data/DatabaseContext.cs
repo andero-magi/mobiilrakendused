@@ -60,7 +60,7 @@ namespace crud.Data
             return await Execute<T, bool>(async () => await Database.DeleteAsync(item) > 0);
         }
 
-        public async Task<bool> DaleteItemByKeyAsync<T>(object primaryKey) where T : class, new()
+        public async Task<bool> DeleteItemByKeyAsync<T>(object primaryKey) where T : class, new()
         {
             return await Execute<T, bool>(async () => await Database.DeleteAsync<T>(primaryKey) > 0);
         }
