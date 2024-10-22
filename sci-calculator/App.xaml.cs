@@ -8,8 +8,8 @@ namespace sci_calculator
 {
     public partial class App : Application
     {
-        const int WindowHeight = 540;
-        const int WindowWidth = 1000;
+        const int WindowHeight = 1000;
+        const int WindowWidth = 540;
 
         public App()
         {
